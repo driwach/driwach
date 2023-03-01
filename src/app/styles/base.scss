@@ -1,12 +1,18 @@
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/bootstrap";
+@import './variables';
+@import './bootstrap';
 
-$theme-colors: (
-  "primary": #F26419,
-  "secondary":#2F4858,
-  "success":#55DDE0,
-  "info": #33658A, 
-  "danger":#915639  
-);
+.btn-primary {
+  @include button-variant($color-primary, darken($color-primary, 7.5%), white, lighten($color-primary,5%), lighten($color-primary, 10%), darken($color-primary,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($color-primary, white, lighten($color-primary,5%), $color-primary);
+}
+
+.btn-secondary{
+  @include button-variant($color-secondary, darken($color-secondary, 7.5%),white, lighten($color-secondary,5%), lighten($color-secondary, 10%), darken($color-secondary,30%));
+}
+
+.btn-outline-secondary {
+  @include button-outline-variant($color-secondary, white, lighten($color-secondary,5%), $color-secondary);
+}

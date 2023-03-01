@@ -8,7 +8,7 @@ import { DashboardComponent } from './dashboard.component';
 const routes: Route[] = [
     {
       path:'',
-      loadComponent: async ()=> DashboardComponent,
+      component: DashboardComponent
     }
 ]
 
