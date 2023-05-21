@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Route, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 
+import { NgScrollbarModule } from 'ngx-scrollbar';
 
 
 const routes: Route[] = [
@@ -16,6 +17,7 @@ const routes: Route[] = [
   declarations: [DashboardComponent],
   imports: [
     CommonModule,
+    NgScrollbarModule,
     RouterModule.forChild(routes)
   ]
 })

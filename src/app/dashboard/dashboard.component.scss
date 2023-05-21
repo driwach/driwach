@@ -1,0 +1,44 @@
+@import 'src/app/styles/_variables.scss';
+
+.card-container{
+   
+}
+
+.d-card-container{
+    height: 80%;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+}
+
+.card-body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.d-card{
+    border: solid 1px black;
+}
+
+.slide-box{
+    background-color: $color-secondary;
+}
+
+.main-box{
+    background-color: $color-primary;
+}
+.avatar{
+    border-radius: 80px;
+    border: solid 3px $color-primary ;
+}
+
+#company{
+    font-size: larger !important;
+    color: white !important;
+    text-decoration: none;
+    &:hover{
+            color: $color-secondary !important;
+    }
+}
