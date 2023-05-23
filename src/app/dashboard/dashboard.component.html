@@ -2,8 +2,7 @@
 
 </div>
 
-
-<div class="d-flex justify-content-center d-card-container">
+<div *ngIf="!isMobile" class="d-flex justify-content-center d-card-container">
     <div class="col-8 ">
         <div class="row d-card rounded shadow-lg">
             <div class="col-4 rounded-start  p-2 slide-box">
@@ -205,4 +204,203 @@
         </div>
     </div>
 
+</div>
+
+
+<div *ngIf="isMobile" class="d-flex justify-content-center " >
+    <div class="col-12 ">
+        <div class="row d-card rounded shadow-lg">
+            <div class="col-12 rounded-start  p-2 slide-box">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                    <div class="col-12 logo">
+                        <img class="avatar" height="150" src="assets/images/mohamed.jpeg">
+                    </div>
+                </div>
+                <div class="row text-center" style="margin-top: 1vh;">
+                    <h2>Mohamed Driwach</h2>
+                </div>
+                <hr style="margin-top: 5vh;">
+                <div class="row ms-1">
+                    <div class="col-4">
+                        <span>
+                            E-mail:
+                        </span>
+                        <br>
+                        <span>
+                            P.Number:
+                        </span>
+                        <br>
+                        <span>
+                            Birth date:
+                        </span>
+
+                    </div>
+                    <div class="col-7">
+                        <span>
+                            mohamed@driwach.com
+                        </span>
+                        <br>
+                        <span>
+                            632244412
+                        </span>
+                        <br>
+                        <span>
+                            18-10-1997
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row ms-1">
+                    <h4>Languages: </h4>
+                    <div class="row mt-2">
+                        <div class="col-1">
+                            <img src="assets/images/catalan.webp">
+                        </div>
+                        <div class="col-10 ms-3">
+                            <span>Català: <b>B2</b></span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-1">
+                            <img src="assets/images/english.png">
+                        </div>
+                        <div class="col-10 ms-3">
+                            <span>English: <b>B2</b></span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-1">
+                            <img src="assets/images/french.png">
+                        </div>
+                        <div class="col-10 ms-3">
+                            <span>Français: <b>A2</b></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row ms-1">
+                    <h4>Links:</h4>
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-2">
+                            <a href="javascript:void(0)" (click)="goTo('https://www.linkedin.com/in/mohamed-driwach/')">
+                                <img height="64" src="assets/images/linkedin.png">
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="javascript:void(0)" (click)="goTo('https://github.com/driwach')">
+                                <img height="64" src="assets/images/github.png">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="col-12 p-2 rounded-end main-box ">
+                <ng-scrollbar style="height: 90vh">
+                    <div class="row ms-1">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Education</h4>
+                                <hr>
+                            </div>
+                            <div class="col-12">
+                                <ul>
+                                    <li>
+                                        Bachelor's degree in Biology and Geology (2013 -> 2016)
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Higher Degree in Multiplatform Application Development (2020 -> 2022)
+                                        <ul>
+                                            <li>Vocational training program (Grau superior desenvolupament d'aplicacions
+                                                multiplataforma).</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Experience</h4>
+                                <hr>
+                            </div>
+                            <div class="col-12">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <h6>
+                                                <a id="company" href="javascript:void(0)"
+                                                    (click)="goTo('https://www.endepro.com/en/')">
+                                                    Endepro
+                                                </a>
+
+                                            </h6>
+                                            <ul>
+                                                <li>
+                                                    <span>Web developer</span>
+                                                    <ul>
+                                                        <li>
+                                                            Developed and maintained web applications utilizing the
+                                                            latest front-end libraries and frameworks
+                                                        </li>
+                                                        <li>
+                                                            Developed backend API programs that effectively interact
+                                                            with databases.
+                                                        </li>
+                                                        <li>
+                                                            Deployed both front-end and back-end software to client
+                                                            servers and provided comprehensive client support for
+                                                            software usage.
+                                                        </li>
+                                                        <li>
+                                                            Developed, and deployed a diverse range of multi-purpose
+                                                            programs with broad functionality and wide-ranging
+                                                            applications
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Skills</h4>
+                                <hr>
+                            </div>
+                            <div class="col-12">
+                                <ul>
+                                    <li>
+                                        Angular (Bootstrap / Angular material)
+                                    </li>
+                                    <li>
+                                        Typescript
+                                    </li>
+                                    <li>
+                                        C# (.Net / .Net core)
+                                    </li>
+                                    <li>
+                                        MS Sql server / Mariadb
+                                    </li>
+                                    <li>
+                                        Selenium Web Driver(Automation Library / Others)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </ng-scrollbar>
+            </div>
+
+        </div>
+    </div>
 </div>
