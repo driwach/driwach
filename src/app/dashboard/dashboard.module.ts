@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard.component';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
 import { NgScrollbarModule } from 'ngx-scrollbar';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 const routes: Route[] = [
@@ -20,6 +21,7 @@ const routes: Route[] = [
     CommonModule,
     NgScrollbarModule,
     RouterModule.forChild(routes),
+    FontAwesomeModule
   ],
   providers:[DeviceDetectorService]
 })
